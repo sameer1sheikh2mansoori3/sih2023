@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar {
+    /* Add your navigation styles here */
+}
+
+.search-bar {
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.search-button {
+    border-radius: 5px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 80px; /* Adjust for the fixed navbar height */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* To create a row layout */
+}
+
+.card {
+    background-color: #f1f1f1;
+    width: calc(33.33% - 10px); /* To create equal-width columns with margin */
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px; /* Margin between cards */
+    display: flex;
+    justify-content: space-between; /* To create two columns */
+  
+
+    /* edited by me */
+    font-size: 20px;
+}
+
+/* Remove margin from the last card */
+.card:last-child {
+    margin-right: 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    /* Add icon styling here */
+}
+
+/* Add more CSS styles as needed */
+
+
+#person{
+    font-size: 75px;
+    color: #3498db;
+}
+#progress{
+    font-size: 75px;
+    color: #FFBF00;
+}
+#pause{
+    font-size: 75px;
+    color: #e74c3c;
+}
+
+
+
+  /* here we are adding row */
+  #User{
+    background-color: #3498db;
+    color: #f1f1f1;
+    padding: 5px;
+  }
+  table {
+
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style table header (th) cells */
+th {
+    background-color: #3498db;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Style table data (td) cells */
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Style alternate rows with a different background color */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+  /* row ends here */

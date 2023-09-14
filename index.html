@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar {
+    /* Add your navigation styles here */
+}
+
+.search-bar {
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.search-button {
+    border-radius: 5px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 80px; /* Adjust for the fixed navbar height */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* To create a row layout */
+}
+
+.card {
+    background-color: #f1f1f1;
+    width: calc(33.33% - 10px); /* To create equal-width columns with margin */
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px; /* Margin between cards */
+    display: flex;
+    justify-content: space-between; /* To create two columns */
+  
+
+    /* edited by me */
+    font-size: 20px;
+}
+
+/* Remove margin from the last card */
+.card:last-child {
+    margin-right: 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    /* Add icon styling here */
+}
+
+/* Add more CSS styles as needed */
+
+
+#person{
+    font-size: 75px;
+    color: #3498db;
+}
+#progress{
+    font-size: 75px;
+    color: #FFBF00;
+}
+#pause{
+    font-size: 75px;
+    color: #e74c3c;
+}
+
+
+
+  /* here we are adding row */
+  #User{
+    background-color: #3498db;
+    color: #f1f1f1;
+    padding: 5px;
+  }
+  table {
+
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style table header (th) cells */
+th {
+    background-color: #3498db;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Style table data (td) cells */
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Style alternate rows with a different background color */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+  /* row ends here */
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <!-- Fixed Navbar -->
+       
+        <nav class="navbar">
+            <!-- Add your navigation links here -->
+           
+        </nav>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </header>
+
+    <main class="content">
+        <!-- Cards in a row with margins -->
+        <div class="card">
+            <div class="column">
+                <p>24</p>
+                <p>Query</p>
+            </div>
+            <div class="column">
+                <i class="fa-solid fa-person-circle-plus" id="person"></i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="column">
+                <p>20</p>
+                <p>Under review</p>
+            </div>
+            <div class="column">
+                <i class="fa-solid fa-circle-half-stroke" id="progress"></i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="column">
+                <p>34</p>
+                <p>Not Touched</p>
+            </div>
+            <div class="column">
+                <i class="fa-solid fa-pause" id="pause"></i>
+            </div>
+        </div>
+
+        <!-- main row starts from here -->
+ <!-- Full-width and full-height box with 3 columns -->
+ 
+
+
+  
+    </main>
+
+
+    <div class="tbox">
+        
+        <table>
+          
+            <thead>
+                <tr><h2 id="User">User's details</h2></tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows and data cells -->
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                    <td>Data 3</td>
+                </tr>
+                <tr>
+                    <td>Data 4</td>
+                    <td>Data 5</td>
+                    <td>Data 6</td>
+                </tr>
+                <tr>
+                    <td>Data 7</td>
+                    <td>Data 8</td>
+                    <td>Data 9</td>
+                </tr>
+                <!-- Repeat this structure for additional rows -->
+            </tbody>
+       </table>
+       
+ </div> 
+</body>
+</html>
